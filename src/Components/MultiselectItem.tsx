@@ -98,7 +98,7 @@ const MultiselectItem: React.FC<IMultiselectDropdownItemProps> = ({
 
   const inlineStyle = StyleSheet.create({
     unselected: {
-      color: colors.text,
+      color: colors.onBackground,
       paddingLeft: 5,
     },
   });

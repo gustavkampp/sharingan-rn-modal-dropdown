@@ -9,7 +9,7 @@ import {
 import { data, groupData } from './data';
 import {
   Button,
-  Colors,
+  MD2Colors as Colors,
   Dialog,
   FAB,
   Paragraph,
@@ -80,7 +80,7 @@ const FormikExample = () => {
             <FAB
               style={styles.fab}
               icon="send"
-              onPress={handleSubmit}
+              onPress={() => handleSubmit}
               disabled={isSubmitting}
               label="Submit"
             />
