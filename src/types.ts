@@ -7,6 +7,7 @@ import type {
 } from 'react-native';
 import type { Animation, CustomAnimation } from 'react-native-animatable';
 import type { Orientation } from 'react-native-modal';
+import { MD3Theme } from 'react-native-paper';
 
 export interface IDefaultValue {
   /**
@@ -171,7 +172,7 @@ export interface IDropdownDefault {
    * Since the dropdown build on top of Native Paper you can over write the theme
    * by passing your own native paper theme, for more info refer https://callstack.github.io/react-native-paper/theming.html
    */
-  paperTheme?: ReactNativePaper.Theme | undefined;
+  paperTheme?: MD3Theme | undefined;
 
   /**
    * Dropdown input style.
@@ -267,7 +268,7 @@ export interface IDropdownDefault {
    * Since the dropdown build on top of Native Paper you can over write the theme
    * by passing your own native paper input theme, for more info refer https://callstack.github.io/react-native-paper/theming.html
    */
-  searchInputTheme?: ReactNativePaper.Theme | undefined;
+  searchInputTheme?: MD3Theme | undefined;
 }
 
 export interface IDropdownData {

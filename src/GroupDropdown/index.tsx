@@ -109,14 +109,14 @@ const GroupDropdown: React.FC<IGroupDropdownProps> = props => {
   const listRef = useRef<SectionList | any>();
 
   useEffect(() => {
-    Dimensions.addEventListener('change', () => {
+    const eventSubscription = Dimensions.addEventListener('change', () => {
       const { width, height } = Dimensions.get('window');
       setDimension({ dw: width, dh: height });
       setIsVisible(false);
       setIconColor('grey');
     });
     return () => {
-      Dimensions.removeEventListener('change', () => {});
+      eventSubscription.remove();
     };
   }, []);
 
@@ -317,7 +317,7 @@ const GroupDropdown: React.FC<IGroupDropdownProps> = props => {
                 }}
                 right={
                   <TextInput.Icon
-                    name={dropdownIcon}
+                    icon={dropdownIcon}
                     size={dropdownIconSize}
                     color={iconColor}
                   />
@@ -401,7 +401,6 @@ const GroupDropdown: React.FC<IGroupDropdownProps> = props => {
                       </View>
                     ) : null
                   }
-                  stickyHeaderIndices={enableSearch ? [0] : undefined}
                   renderItem={({ item }) => (
                     <Item
                       item={item}
