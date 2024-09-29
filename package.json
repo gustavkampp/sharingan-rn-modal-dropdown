@@ -51,13 +51,13 @@
     "react-native-group-dropdown",
     "group-dropdown"
   ],
-  "repository": "https://github.com/srk-sharingan/sharingan-rn-modal-dropdown",
+  "repository": "https://github.com/gustavkampp/sharingan-rn-modal-dropdown",
   "author": "Selvam Kumar <itsselvamkumar@gmail.com> (https://github.com/srk-sharingan)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/srk-sharingan/sharingan-rn-modal-dropdown/issues"
+    "url": "https://github.com/gustavkampp/sharingan-rn-modal-dropdown/issues"
   },
-  "homepage": "https://github.com/srk-sharingan/sharingan-rn-modal-dropdown#readme",
+  "homepage": "https://github.com/gustavkampp/sharingan-rn-modal-dropdown/sharingan-rn-modal-dropdown#readme",
   "dependencies": {
     "lodash": "^4.17.20",
     "react-native-modal": "^13.0.1"
